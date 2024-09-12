@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import { TOKEN_SECRET } from "../config.js";
 
+//creacion del token
 export function createAccessToken(payload) {
   return new Promise((resolve, reject) => {
     jwt.sign(
